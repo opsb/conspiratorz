@@ -1,3 +1,62 @@
 @import "settings";
 
 @import "foundation";
+
+body {
+  // background-image: url('http://4.bp.blogspot.com/--HJvKAKELn4/UE3Nv6fos8I/AAAAAAAAAqs/beihZ3gITO8/s1600/Poyke-Fire-SMALLER.gif;')
+  background: black;
+}
+
+body {
+  font-family: georgia;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+.navbar {
+  .title {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    font-family: georgia;
+    text-align: center;
+  }
+}
+
+.row {
+  background-image: url('/fanciers.jpg');
+  background-size: 100% auto;
+  padding-top: 20px;
+  min-height: 600px;
+}
+
+.chat {
+  @extend .large-5;
+  @extend .large-centered;
+  @extend .columns;
+}
+
+.message {
+  @extend .panel;
+  @extend .radius;
+  background-image: url('/paper_fibers.png');
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend .button;
+  background-image: url('/door.jpg');
+  background-size: cover;
+  width: 824px;
+  height: 500px;
+  line-height: 500px;
+  font-size: 1.8em;
+  font-family: georgia;
+  text-align: left;
+  padding-left: 320px;
+}
