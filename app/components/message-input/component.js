@@ -1,9 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  clear() {
+    this.set('text', null);
+  },
+
   actions: {
     addMessage(text) {
-      this.set('text', null);
+      this.clear();
       this.sendAction('onAddMessage', text);
     }
   }
