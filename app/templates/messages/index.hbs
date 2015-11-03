@@ -3,13 +3,11 @@
   <div class="chat">
     {{input action="addMessage"}}
 
-    <div class="message">
-      Message one
-    </div>
-
-    <div class="message">
-      Message two
-    </div>
+    {{#each model as |message|}}
+      <div class="message">
+        {{message.body}}
+      </div>
+    {{/each}}
 
   </div>
 </div>
