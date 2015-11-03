@@ -3,11 +3,7 @@
   <div class="chat">
     {{input action="addMessage"}}
 
-    {{#each model as |message|}}
-      <div class="message">
-        {{message.body}}
-      </div>
-    {{/each}}
+    {{message-list messages=model}}
 
   </div>
 </div>
